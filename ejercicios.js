@@ -21,5 +21,9 @@ const personajesMenores= personajesSimpsons.filter(function(esMenor) {
 console.table (personajesMenores)
 //EJERCICIO 2
 console.log ("Ejercicio 2")
-const edadTotal=personajesMenores.reduce((accumulator, curValue)=> accumulator + curValue.edad,0)
+const edadTotal=personajesMenores.reduce((accumulator, personaje)=> accumulator + personaje.edad,0)
 console.table (edadTotal)
+//EJERCICIO 3
+console.log ("Ejercicio 3")
+const nombrePersonajes=personajesMenores.map((personaje)=> personaje.nombre)
+console.table (nombrePersonajes)
